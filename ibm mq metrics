@@ -1,0 +1,641 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 3.4766e-05
+go_gc_duration_seconds{quantile="0.25"} 6.9992e-05
+go_gc_duration_seconds{quantile="0.5"} 0.000110018
+go_gc_duration_seconds{quantile="0.75"} 0.000169823
+go_gc_duration_seconds{quantile="1"} 0.001244394
+go_gc_duration_seconds_sum 0.007217119
+go_gc_duration_seconds_count 33
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 9
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.19.4"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.804096e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 5.7463104e+07
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 4306
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 933240
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 9.074664e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.804096e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 4.489216e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 3.506176e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 10348
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 3.653632e+06
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 7.995392e+06
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6732836647287846e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 943588
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 2400
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 69840
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 81360
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 506006
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 393216
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 393216
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 1.8070544e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 7
+# HELP ibmmq_qmgr_alter_durable_subscription_count Alter durable subscription count
+# TYPE ibmmq_qmgr_alter_durable_subscription_count gauge
+ibmmq_qmgr_alter_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_channel_initiator_status Channel Initiator Status
+# TYPE ibmmq_qmgr_channel_initiator_status gauge
+ibmmq_qmgr_channel_initiator_status{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_command_server_status Command Server Status
+# TYPE ibmmq_qmgr_command_server_status gauge
+ibmmq_qmgr_command_server_status{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_commit_count Commit count
+# TYPE ibmmq_qmgr_commit_count gauge
+ibmmq_qmgr_commit_count{platform="UNIX",qmgr="TEST"} 1
+# HELP ibmmq_qmgr_concurrent_connections_high_water_mark Concurrent connections - high water mark
+# TYPE ibmmq_qmgr_concurrent_connections_high_water_mark gauge
+ibmmq_qmgr_concurrent_connections_high_water_mark{platform="UNIX",qmgr="TEST"} 26
+# HELP ibmmq_qmgr_connection_count Connection Count
+# TYPE ibmmq_qmgr_connection_count gauge
+ibmmq_qmgr_connection_count{platform="UNIX",qmgr="TEST"} 24
+# HELP ibmmq_qmgr_cpu_load_fifteen_minute_average_percentage CPU load - fifteen minute average
+# TYPE ibmmq_qmgr_cpu_load_fifteen_minute_average_percentage gauge
+ibmmq_qmgr_cpu_load_fifteen_minute_average_percentage{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_cpu_load_five_minute_average_percentage CPU load - five minute average
+# TYPE ibmmq_qmgr_cpu_load_five_minute_average_percentage gauge
+ibmmq_qmgr_cpu_load_five_minute_average_percentage{platform="UNIX",qmgr="TEST"} 0.04
+# HELP ibmmq_qmgr_cpu_load_one_minute_average_percentage CPU load - one minute average
+# TYPE ibmmq_qmgr_cpu_load_one_minute_average_percentage gauge
+ibmmq_qmgr_cpu_load_one_minute_average_percentage{platform="UNIX",qmgr="TEST"} 0.02
+# HELP ibmmq_qmgr_create_durable_subscription_count Create durable subscription count
+# TYPE ibmmq_qmgr_create_durable_subscription_count gauge
+ibmmq_qmgr_create_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_create_non_durable_subscription_count Create non-durable subscription count
+# TYPE ibmmq_qmgr_create_non_durable_subscription_count gauge
+ibmmq_qmgr_create_non_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_delete_durable_subscription_count Delete durable subscription count
+# TYPE ibmmq_qmgr_delete_durable_subscription_count gauge
+ibmmq_qmgr_delete_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_delete_non_durable_subscription_count Delete non-durable subscription count
+# TYPE ibmmq_qmgr_delete_non_durable_subscription_count gauge
+ibmmq_qmgr_delete_non_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_durable_subscriber_high_water_mark Durable subscriber - high water mark
+# TYPE ibmmq_qmgr_durable_subscriber_high_water_mark gauge
+ibmmq_qmgr_durable_subscriber_high_water_mark{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_durable_subscriber_low_water_mark Durable subscriber - low water mark
+# TYPE ibmmq_qmgr_durable_subscriber_low_water_mark gauge
+ibmmq_qmgr_durable_subscriber_low_water_mark{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_expired_message_count Expired message count
+# TYPE ibmmq_qmgr_expired_message_count gauge
+ibmmq_qmgr_expired_message_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_exporter_publications How many resource publications processed
+# TYPE ibmmq_qmgr_exporter_publications gauge
+ibmmq_qmgr_exporter_publications{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_failed_browse_count Failed browse count
+# TYPE ibmmq_qmgr_failed_browse_count gauge
+ibmmq_qmgr_failed_browse_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_create_alter_resume_subscription_count Failed create/alter/resume subscription count
+# TYPE ibmmq_qmgr_failed_create_alter_resume_subscription_count gauge
+ibmmq_qmgr_failed_create_alter_resume_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqcb_count Failed MQCB count
+# TYPE ibmmq_qmgr_failed_mqcb_count gauge
+ibmmq_qmgr_failed_mqcb_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqclose_count Failed MQCLOSE count
+# TYPE ibmmq_qmgr_failed_mqclose_count gauge
+ibmmq_qmgr_failed_mqclose_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqconn_mqconnx_count Failed MQCONN/MQCONNX count
+# TYPE ibmmq_qmgr_failed_mqconn_mqconnx_count gauge
+ibmmq_qmgr_failed_mqconn_mqconnx_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqget_count Failed MQGET - count
+# TYPE ibmmq_qmgr_failed_mqget_count gauge
+ibmmq_qmgr_failed_mqget_count{platform="UNIX",qmgr="TEST"} 14
+# HELP ibmmq_qmgr_failed_mqinq_count Failed MQINQ count
+# TYPE ibmmq_qmgr_failed_mqinq_count gauge
+ibmmq_qmgr_failed_mqinq_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqopen_count Failed MQOPEN count
+# TYPE ibmmq_qmgr_failed_mqopen_count gauge
+ibmmq_qmgr_failed_mqopen_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqput1_count Failed MQPUT1 count
+# TYPE ibmmq_qmgr_failed_mqput1_count gauge
+ibmmq_qmgr_failed_mqput1_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqput_count Failed MQPUT count
+# TYPE ibmmq_qmgr_failed_mqput_count gauge
+ibmmq_qmgr_failed_mqput_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqset_count Failed MQSET count
+# TYPE ibmmq_qmgr_failed_mqset_count gauge
+ibmmq_qmgr_failed_mqset_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_mqsubrq_count Failed MQSUBRQ count
+# TYPE ibmmq_qmgr_failed_mqsubrq_count gauge
+ibmmq_qmgr_failed_mqsubrq_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_failed_topic_mqput_mqput1_count Failed topic MQPUT/MQPUT1 count
+# TYPE ibmmq_qmgr_failed_topic_mqput_mqput1_count gauge
+ibmmq_qmgr_failed_topic_mqput_mqput1_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_got_non_persistent_messages_bytes Got non-persistent messages - byte count
+# TYPE ibmmq_qmgr_got_non_persistent_messages_bytes gauge
+ibmmq_qmgr_got_non_persistent_messages_bytes{platform="UNIX",qmgr="TEST"} 25664
+# HELP ibmmq_qmgr_got_persistent_messages_bytes Got persistent messages - byte count
+# TYPE ibmmq_qmgr_got_persistent_messages_bytes gauge
+ibmmq_qmgr_got_persistent_messages_bytes{platform="UNIX",qmgr="TEST"} 212
+# HELP ibmmq_qmgr_interval_destructive_get_total_bytes Interval total destructive get - byte count
+# TYPE ibmmq_qmgr_interval_destructive_get_total_bytes gauge
+ibmmq_qmgr_interval_destructive_get_total_bytes{platform="UNIX",qmgr="TEST"} 25876
+# HELP ibmmq_qmgr_interval_destructive_get_total_count Interval total destructive get- count
+# TYPE ibmmq_qmgr_interval_destructive_get_total_count gauge
+ibmmq_qmgr_interval_destructive_get_total_count{platform="UNIX",qmgr="TEST"} 62
+# HELP ibmmq_qmgr_interval_mqput_mqput1_total_bytes Interval total MQPUT/MQPUT1 byte count
+# TYPE ibmmq_qmgr_interval_mqput_mqput1_total_bytes gauge
+ibmmq_qmgr_interval_mqput_mqput1_total_bytes{platform="UNIX",qmgr="TEST"} 25876
+# HELP ibmmq_qmgr_interval_mqput_mqput1_total_count Interval total MQPUT/MQPUT1 count
+# TYPE ibmmq_qmgr_interval_mqput_mqput1_total_count gauge
+ibmmq_qmgr_interval_mqput_mqput1_total_count{platform="UNIX",qmgr="TEST"} 62
+# HELP ibmmq_qmgr_interval_topic_put_total Interval total topic bytes put
+# TYPE ibmmq_qmgr_interval_topic_put_total gauge
+ibmmq_qmgr_interval_topic_put_total{platform="UNIX",qmgr="TEST"} 5100
+# HELP ibmmq_qmgr_log_current_primary_space_in_use_percentage Log - current primary space in use
+# TYPE ibmmq_qmgr_log_current_primary_space_in_use_percentage gauge
+ibmmq_qmgr_log_current_primary_space_in_use_percentage{platform="UNIX",qmgr="TEST"} 3.32
+# HELP ibmmq_qmgr_log_file_system_in_use_bytes Log file system - bytes in use
+# TYPE ibmmq_qmgr_log_file_system_in_use_bytes gauge
+ibmmq_qmgr_log_file_system_in_use_bytes{platform="UNIX",qmgr="TEST"} 7.436664832e+09
+# HELP ibmmq_qmgr_log_file_system_max_bytes Log file system - bytes max
+# TYPE ibmmq_qmgr_log_file_system_max_bytes gauge
+ibmmq_qmgr_log_file_system_max_bytes{platform="UNIX",qmgr="TEST"} 7.512522752e+10
+# HELP ibmmq_qmgr_log_in_use_bytes Log - bytes in use
+# TYPE ibmmq_qmgr_log_in_use_bytes gauge
+ibmmq_qmgr_log_in_use_bytes{platform="UNIX",qmgr="TEST"} 5.0331648e+07
+# HELP ibmmq_qmgr_log_logical_written_bytes Log - logical bytes written
+# TYPE ibmmq_qmgr_log_logical_written_bytes gauge
+ibmmq_qmgr_log_logical_written_bytes{platform="UNIX",qmgr="TEST"} 1430
+# HELP ibmmq_qmgr_log_max_bytes Log - bytes max
+# TYPE ibmmq_qmgr_log_max_bytes gauge
+ibmmq_qmgr_log_max_bytes{platform="UNIX",qmgr="TEST"} 8.388608e+07
+# HELP ibmmq_qmgr_log_physical_written_bytes Log - physical bytes written
+# TYPE ibmmq_qmgr_log_physical_written_bytes gauge
+ibmmq_qmgr_log_physical_written_bytes{platform="UNIX",qmgr="TEST"} 16384
+# HELP ibmmq_qmgr_log_workload_primary_space_utilization_percentage Log - workload primary space utilization
+# TYPE ibmmq_qmgr_log_workload_primary_space_utilization_percentage gauge
+ibmmq_qmgr_log_workload_primary_space_utilization_percentage{platform="UNIX",qmgr="TEST"} 3.33
+# HELP ibmmq_qmgr_log_write_latency_seconds Log - write latency
+# TYPE ibmmq_qmgr_log_write_latency_seconds gauge
+ibmmq_qmgr_log_write_latency_seconds{platform="UNIX",qmgr="TEST"} 0.001146
+# HELP ibmmq_qmgr_log_write_size_bytes Log - write size
+# TYPE ibmmq_qmgr_log_write_size_bytes gauge
+ibmmq_qmgr_log_write_size_bytes{platform="UNIX",qmgr="TEST"} 4762
+# HELP ibmmq_qmgr_mq_errors_file_system_free_space_percentage MQ errors file system - free space
+# TYPE ibmmq_qmgr_mq_errors_file_system_free_space_percentage gauge
+ibmmq_qmgr_mq_errors_file_system_free_space_percentage{platform="UNIX",qmgr="TEST"} 90.1
+# HELP ibmmq_qmgr_mq_errors_file_system_in_use_bytes MQ errors file system - bytes in use
+# TYPE ibmmq_qmgr_mq_errors_file_system_in_use_bytes gauge
+ibmmq_qmgr_mq_errors_file_system_in_use_bytes{platform="UNIX",qmgr="TEST"} 7.436500992e+09
+# HELP ibmmq_qmgr_mq_fdc_file_count MQ FDC file count
+# TYPE ibmmq_qmgr_mq_fdc_file_count gauge
+ibmmq_qmgr_mq_fdc_file_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_mq_trace_file_system_free_space_percentage MQ trace file system - free space
+# TYPE ibmmq_qmgr_mq_trace_file_system_free_space_percentage gauge
+ibmmq_qmgr_mq_trace_file_system_free_space_percentage{platform="UNIX",qmgr="TEST"} 90.1
+# HELP ibmmq_qmgr_mq_trace_file_system_in_use_bytes MQ trace file system - bytes in use
+# TYPE ibmmq_qmgr_mq_trace_file_system_in_use_bytes gauge
+ibmmq_qmgr_mq_trace_file_system_in_use_bytes{platform="UNIX",qmgr="TEST"} 7.436500992e+09
+# HELP ibmmq_qmgr_mqcb_count MQCB count
+# TYPE ibmmq_qmgr_mqcb_count gauge
+ibmmq_qmgr_mqcb_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_mqclose_count MQCLOSE count
+# TYPE ibmmq_qmgr_mqclose_count gauge
+ibmmq_qmgr_mqclose_count{platform="UNIX",qmgr="TEST"} 27
+# HELP ibmmq_qmgr_mqconn_mqconnx_count MQCONN/MQCONNX count
+# TYPE ibmmq_qmgr_mqconn_mqconnx_count gauge
+ibmmq_qmgr_mqconn_mqconnx_count{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_mqctl_count MQCTL count
+# TYPE ibmmq_qmgr_mqctl_count gauge
+ibmmq_qmgr_mqctl_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_mqdisc_count MQDISC count
+# TYPE ibmmq_qmgr_mqdisc_count gauge
+ibmmq_qmgr_mqdisc_count{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_mqinq_count MQINQ count
+# TYPE ibmmq_qmgr_mqinq_count gauge
+ibmmq_qmgr_mqinq_count{platform="UNIX",qmgr="TEST"} 14
+# HELP ibmmq_qmgr_mqopen_count MQOPEN count
+# TYPE ibmmq_qmgr_mqopen_count gauge
+ibmmq_qmgr_mqopen_count{platform="UNIX",qmgr="TEST"} 27
+# HELP ibmmq_qmgr_mqset_count MQSET count
+# TYPE ibmmq_qmgr_mqset_count gauge
+ibmmq_qmgr_mqset_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_mqstat_count MQSTAT count
+# TYPE ibmmq_qmgr_mqstat_count gauge
+ibmmq_qmgr_mqstat_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_mqsubrq_count MQSUBRQ count
+# TYPE ibmmq_qmgr_mqsubrq_count gauge
+ibmmq_qmgr_mqsubrq_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_non_durable_subscriber_high_water_mark Non-durable subscriber - high water mark
+# TYPE ibmmq_qmgr_non_durable_subscriber_high_water_mark gauge
+ibmmq_qmgr_non_durable_subscriber_high_water_mark{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_non_durable_subscriber_low_water_mark Non-durable subscriber - low water mark
+# TYPE ibmmq_qmgr_non_durable_subscriber_low_water_mark gauge
+ibmmq_qmgr_non_durable_subscriber_low_water_mark{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_non_persistent_message_browse_bytes Non-persistent message browse - byte count
+# TYPE ibmmq_qmgr_non_persistent_message_browse_bytes gauge
+ibmmq_qmgr_non_persistent_message_browse_bytes{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_non_persistent_message_browse_count Non-persistent message browse - count
+# TYPE ibmmq_qmgr_non_persistent_message_browse_count gauge
+ibmmq_qmgr_non_persistent_message_browse_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_non_persistent_message_destructive_get_count Non-persistent message destructive get - count
+# TYPE ibmmq_qmgr_non_persistent_message_destructive_get_count gauge
+ibmmq_qmgr_non_persistent_message_destructive_get_count{platform="UNIX",qmgr="TEST"} 61
+# HELP ibmmq_qmgr_non_persistent_message_mqput1_count Non-persistent message MQPUT1 count
+# TYPE ibmmq_qmgr_non_persistent_message_mqput1_count gauge
+ibmmq_qmgr_non_persistent_message_mqput1_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_non_persistent_message_mqput_count Non-persistent message MQPUT count
+# TYPE ibmmq_qmgr_non_persistent_message_mqput_count gauge
+ibmmq_qmgr_non_persistent_message_mqput_count{platform="UNIX",qmgr="TEST"} 61
+# HELP ibmmq_qmgr_non_persistent_topic_mqput_mqput1_count Non-persistent - topic MQPUT/MQPUT1 count
+# TYPE ibmmq_qmgr_non_persistent_topic_mqput_mqput1_count gauge
+ibmmq_qmgr_non_persistent_topic_mqput_mqput1_count{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_persistent_message_browse_bytes Persistent message browse - byte count
+# TYPE ibmmq_qmgr_persistent_message_browse_bytes gauge
+ibmmq_qmgr_persistent_message_browse_bytes{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_persistent_message_browse_count Persistent message browse - count
+# TYPE ibmmq_qmgr_persistent_message_browse_count gauge
+ibmmq_qmgr_persistent_message_browse_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_persistent_message_destructive_get_count Persistent message destructive get - count
+# TYPE ibmmq_qmgr_persistent_message_destructive_get_count gauge
+ibmmq_qmgr_persistent_message_destructive_get_count{platform="UNIX",qmgr="TEST"} 1
+# HELP ibmmq_qmgr_persistent_message_mqput1_count Persistent message MQPUT1 count
+# TYPE ibmmq_qmgr_persistent_message_mqput1_count gauge
+ibmmq_qmgr_persistent_message_mqput1_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_persistent_message_mqput_count Persistent message MQPUT count
+# TYPE ibmmq_qmgr_persistent_message_mqput_count gauge
+ibmmq_qmgr_persistent_message_mqput_count{platform="UNIX",qmgr="TEST"} 1
+# HELP ibmmq_qmgr_persistent_topic_mqput_mqput1_count Persistent - topic MQPUT/MQPUT1 count
+# TYPE ibmmq_qmgr_persistent_topic_mqput_mqput1_count gauge
+ibmmq_qmgr_persistent_topic_mqput_mqput1_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_published_to_subscribers_bytes Published to subscribers - byte count
+# TYPE ibmmq_qmgr_published_to_subscribers_bytes gauge
+ibmmq_qmgr_published_to_subscribers_bytes{platform="UNIX",qmgr="TEST"} 5100
+# HELP ibmmq_qmgr_published_to_subscribers_message_count Published to subscribers - message count
+# TYPE ibmmq_qmgr_published_to_subscribers_message_count gauge
+ibmmq_qmgr_published_to_subscribers_message_count{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_purged_queue_count Purged queue count
+# TYPE ibmmq_qmgr_purged_queue_count gauge
+ibmmq_qmgr_purged_queue_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_put_non_persistent_messages_bytes Put non-persistent messages - byte count
+# TYPE ibmmq_qmgr_put_non_persistent_messages_bytes gauge
+ibmmq_qmgr_put_non_persistent_messages_bytes{platform="UNIX",qmgr="TEST"} 25664
+# HELP ibmmq_qmgr_put_persistent_messages_bytes Put persistent messages - byte count
+# TYPE ibmmq_qmgr_put_persistent_messages_bytes gauge
+ibmmq_qmgr_put_persistent_messages_bytes{platform="UNIX",qmgr="TEST"} 212
+# HELP ibmmq_qmgr_queue_manager_file_system_free_space_percentage Queue Manager file system - free space
+# TYPE ibmmq_qmgr_queue_manager_file_system_free_space_percentage gauge
+ibmmq_qmgr_queue_manager_file_system_free_space_percentage{platform="UNIX",qmgr="TEST"} 90.1
+# HELP ibmmq_qmgr_queue_manager_file_system_in_use_bytes Queue Manager file system - bytes in use
+# TYPE ibmmq_qmgr_queue_manager_file_system_in_use_bytes gauge
+ibmmq_qmgr_queue_manager_file_system_in_use_bytes{platform="UNIX",qmgr="TEST"} 7.436500992e+09
+# HELP ibmmq_qmgr_ram_free_percentage RAM free percentage
+# TYPE ibmmq_qmgr_ram_free_percentage gauge
+ibmmq_qmgr_ram_free_percentage{platform="UNIX",qmgr="TEST"} 58.82
+# HELP ibmmq_qmgr_ram_total_bytes RAM total bytes
+# TYPE ibmmq_qmgr_ram_total_bytes gauge
+ibmmq_qmgr_ram_total_bytes{platform="UNIX",qmgr="TEST"} 1.905262592e+09
+# HELP ibmmq_qmgr_ram_total_estimate_for_queue_manager_bytes RAM total bytes - estimate for queue manager
+# TYPE ibmmq_qmgr_ram_total_estimate_for_queue_manager_bytes gauge
+ibmmq_qmgr_ram_total_estimate_for_queue_manager_bytes{platform="UNIX",qmgr="TEST"} 1.43654912e+08
+# HELP ibmmq_qmgr_resume_durable_subscription_count Resume durable subscription count
+# TYPE ibmmq_qmgr_resume_durable_subscription_count gauge
+ibmmq_qmgr_resume_durable_subscription_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_rollback_count Rollback count
+# TYPE ibmmq_qmgr_rollback_count gauge
+ibmmq_qmgr_rollback_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_status Queue Manager Status
+# TYPE ibmmq_qmgr_status gauge
+ibmmq_qmgr_status{platform="UNIX",qmgr="TEST"} 2
+# HELP ibmmq_qmgr_subscription_delete_failure_count Subscription delete failure count
+# TYPE ibmmq_qmgr_subscription_delete_failure_count gauge
+ibmmq_qmgr_subscription_delete_failure_count{platform="UNIX",qmgr="TEST"} 0
+# HELP ibmmq_qmgr_system_cpu_time_estimate_for_queue_manager_percentage System CPU time - percentage estimate for queue manager
+# TYPE ibmmq_qmgr_system_cpu_time_estimate_for_queue_manager_percentage gauge
+ibmmq_qmgr_system_cpu_time_estimate_for_queue_manager_percentage{platform="UNIX",qmgr="TEST"} 0.04
+# HELP ibmmq_qmgr_system_cpu_time_percentage System CPU time percentage
+# TYPE ibmmq_qmgr_system_cpu_time_percentage gauge
+ibmmq_qmgr_system_cpu_time_percentage{platform="UNIX",qmgr="TEST"} 0.95
+# HELP ibmmq_qmgr_topic_mqput_mqput1_interval_total Topic MQPUT/MQPUT1 interval total
+# TYPE ibmmq_qmgr_topic_mqput_mqput1_interval_total gauge
+ibmmq_qmgr_topic_mqput_mqput1_interval_total{platform="UNIX",qmgr="TEST"} 18
+# HELP ibmmq_qmgr_uptime Up time
+# TYPE ibmmq_qmgr_uptime gauge
+ibmmq_qmgr_uptime{platform="UNIX",qmgr="TEST"} 14172
+# HELP ibmmq_qmgr_user_cpu_time_estimate_for_queue_manager_percentage User CPU time - percentage estimate for queue manager
+# TYPE ibmmq_qmgr_user_cpu_time_estimate_for_queue_manager_percentage gauge
+ibmmq_qmgr_user_cpu_time_estimate_for_queue_manager_percentage{platform="UNIX",qmgr="TEST"} 0.03
+# HELP ibmmq_qmgr_user_cpu_time_percentage User CPU time percentage
+# TYPE ibmmq_qmgr_user_cpu_time_percentage gauge
+ibmmq_qmgr_user_cpu_time_percentage{platform="UNIX",qmgr="TEST"} 0.85
+# HELP ibmmq_queue_attribute_max_depth Queue Max Depth
+# TYPE ibmmq_queue_attribute_max_depth gauge
+ibmmq_queue_attribute_max_depth{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 5000
+# HELP ibmmq_queue_attribute_usage Queue Usage
+# TYPE ibmmq_queue_attribute_usage gauge
+ibmmq_queue_attribute_usage{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_average_queue_time_seconds average queue time
+# TYPE ibmmq_queue_average_queue_time_seconds gauge
+ibmmq_queue_average_queue_time_seconds{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_avoided_percentage queue avoided bytes
+# TYPE ibmmq_queue_avoided_percentage gauge
+ibmmq_queue_avoided_percentage{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_avoided_puts_percentage queue avoided puts
+# TYPE ibmmq_queue_avoided_puts_percentage gauge
+ibmmq_queue_avoided_puts_percentage{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_depth Queue depth
+# TYPE ibmmq_queue_depth gauge
+ibmmq_queue_depth{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 4
+# HELP ibmmq_queue_destructive_mqget_fails destructive MQGET fails
+# TYPE ibmmq_queue_destructive_mqget_fails gauge
+ibmmq_queue_destructive_mqget_fails{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_fails_with_mqrc_no_msg_available destructive MQGET fails with MQRC_NO_MSG_AVAILABLE
+# TYPE ibmmq_queue_destructive_mqget_fails_with_mqrc_no_msg_available gauge
+ibmmq_queue_destructive_mqget_fails_with_mqrc_no_msg_available{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_fails_with_mqrc_truncated_msg_failed destructive MQGET fails with MQRC_TRUNCATED_MSG_FAILED
+# TYPE ibmmq_queue_destructive_mqget_fails_with_mqrc_truncated_msg_failed gauge
+ibmmq_queue_destructive_mqget_fails_with_mqrc_truncated_msg_failed{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_non_persistent_bytes destructive MQGET non-persistent byte count
+# TYPE ibmmq_queue_destructive_mqget_non_persistent_bytes gauge
+ibmmq_queue_destructive_mqget_non_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_non_persistent_message_count destructive MQGET non-persistent message count
+# TYPE ibmmq_queue_destructive_mqget_non_persistent_message_count gauge
+ibmmq_queue_destructive_mqget_non_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_persistent_bytes destructive MQGET persistent byte count
+# TYPE ibmmq_queue_destructive_mqget_persistent_bytes gauge
+ibmmq_queue_destructive_mqget_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_destructive_mqget_persistent_message_count destructive MQGET persistent message count
+# TYPE ibmmq_queue_destructive_mqget_persistent_message_count gauge
+ibmmq_queue_destructive_mqget_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_expired_messages messages expired
+# TYPE ibmmq_queue_expired_messages gauge
+ibmmq_queue_expired_messages{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_input_handles Input Handles
+# TYPE ibmmq_queue_input_handles gauge
+ibmmq_queue_input_handles{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_lock_contention_percentage lock contention
+# TYPE ibmmq_queue_lock_contention_percentage gauge
+ibmmq_queue_lock_contention_percentage{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqclose_count MQCLOSE count
+# TYPE ibmmq_queue_mqclose_count gauge
+ibmmq_queue_mqclose_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_fails MQGET browse fails
+# TYPE ibmmq_queue_mqget_browse_fails gauge
+ibmmq_queue_mqget_browse_fails{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_fails_with_mqrc_no_msg_available MQGET browse fails with MQRC_NO_MSG_AVAILABLE
+# TYPE ibmmq_queue_mqget_browse_fails_with_mqrc_no_msg_available gauge
+ibmmq_queue_mqget_browse_fails_with_mqrc_no_msg_available{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_fails_with_mqrc_truncated_msg_failed MQGET browse fails with MQRC_TRUNCATED_MSG_FAILED
+# TYPE ibmmq_queue_mqget_browse_fails_with_mqrc_truncated_msg_failed gauge
+ibmmq_queue_mqget_browse_fails_with_mqrc_truncated_msg_failed{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_non_persistent_bytes MQGET browse non-persistent byte count
+# TYPE ibmmq_queue_mqget_browse_non_persistent_bytes gauge
+ibmmq_queue_mqget_browse_non_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_non_persistent_message_count MQGET browse non-persistent message count
+# TYPE ibmmq_queue_mqget_browse_non_persistent_message_count gauge
+ibmmq_queue_mqget_browse_non_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_persistent_bytes MQGET browse persistent byte count
+# TYPE ibmmq_queue_mqget_browse_persistent_bytes gauge
+ibmmq_queue_mqget_browse_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_browse_persistent_message_count MQGET browse persistent message count
+# TYPE ibmmq_queue_mqget_browse_persistent_message_count gauge
+ibmmq_queue_mqget_browse_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_bytes MQGET byte count
+# TYPE ibmmq_queue_mqget_bytes gauge
+ibmmq_queue_mqget_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqget_count MQGET count
+# TYPE ibmmq_queue_mqget_count gauge
+ibmmq_queue_mqget_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqinq_count MQINQ count
+# TYPE ibmmq_queue_mqinq_count gauge
+ibmmq_queue_mqinq_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqopen_count MQOPEN count
+# TYPE ibmmq_queue_mqopen_count gauge
+ibmmq_queue_mqopen_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput1_non_persistent_message_count MQPUT1 non-persistent message count
+# TYPE ibmmq_queue_mqput1_non_persistent_message_count gauge
+ibmmq_queue_mqput1_non_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput1_persistent_message_count MQPUT1 persistent message count
+# TYPE ibmmq_queue_mqput1_persistent_message_count gauge
+ibmmq_queue_mqput1_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput_bytes MQPUT byte count
+# TYPE ibmmq_queue_mqput_bytes gauge
+ibmmq_queue_mqput_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput_mqput1_count MQPUT/MQPUT1 count
+# TYPE ibmmq_queue_mqput_mqput1_count gauge
+ibmmq_queue_mqput_mqput1_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput_non_persistent_message_count MQPUT non-persistent message count
+# TYPE ibmmq_queue_mqput_non_persistent_message_count gauge
+ibmmq_queue_mqput_non_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqput_persistent_message_count MQPUT persistent message count
+# TYPE ibmmq_queue_mqput_persistent_message_count gauge
+ibmmq_queue_mqput_persistent_message_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_mqset_count MQSET count
+# TYPE ibmmq_queue_mqset_count gauge
+ibmmq_queue_mqset_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_non_persistent_bytes non-persistent byte count
+# TYPE ibmmq_queue_non_persistent_bytes gauge
+ibmmq_queue_non_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_oldest_message_age Oldest Message
+# TYPE ibmmq_queue_oldest_message_age gauge
+ibmmq_queue_oldest_message_age{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_output_handles Input Handles
+# TYPE ibmmq_queue_output_handles gauge
+ibmmq_queue_output_handles{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_persistent_bytes persistent byte count
+# TYPE ibmmq_queue_persistent_bytes gauge
+ibmmq_queue_persistent_bytes{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_purged_count queue purged count
+# TYPE ibmmq_queue_purged_count gauge
+ibmmq_queue_purged_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_qfile_current_size Queue File Current Size
+# TYPE ibmmq_queue_qfile_current_size gauge
+ibmmq_queue_qfile_current_size{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 1
+# HELP ibmmq_queue_qfile_max_size Queue File Maximum Size
+# TYPE ibmmq_queue_qfile_max_size gauge
+ibmmq_queue_qfile_max_size{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 2.08896e+06
+# HELP ibmmq_queue_qtime_long Queue Time Long
+# TYPE ibmmq_queue_qtime_long gauge
+ibmmq_queue_qtime_long{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_qtime_short Queue Time Short
+# TYPE ibmmq_queue_qtime_short gauge
+ibmmq_queue_qtime_short{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_rolled_back_mqget_count rolled back MQGET count
+# TYPE ibmmq_queue_rolled_back_mqget_count gauge
+ibmmq_queue_rolled_back_mqget_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_rolled_back_mqput_count rolled back MQPUT count
+# TYPE ibmmq_queue_rolled_back_mqput_count gauge
+ibmmq_queue_rolled_back_mqput_count{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_time_since_get Time Since Get
+# TYPE ibmmq_queue_time_since_get gauge
+ibmmq_queue_time_since_get{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_time_since_put Time Since Put
+# TYPE ibmmq_queue_time_since_put gauge
+ibmmq_queue_time_since_put{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_queue_uncommitted_messages Uncommitted Messages (Count)
+# TYPE ibmmq_queue_uncommitted_messages gauge
+ibmmq_queue_uncommitted_messages{cluster="-",description="-",platform="UNIX",qmgr="TEST",queue="QL.TEST",usage="NORMAL"} 0
+# HELP ibmmq_subscription_messsages_received Messages Received
+# TYPE ibmmq_subscription_messsages_received gauge
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020e710bc6303010040",subscription="SYSTEM.DEFAULT.SUB",topic="",type="ADMIN"} 0
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6306150040",subscription="TEST SYSTEM.BROKER.INTER.BROKER.COMMUNICATIONS 414D51590101000000000000000000000000000000000000 SYSTEM.BROKER.ADMIN.STREAM MQ/TEST                                            /StreamSupport",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="API"} 0
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6362f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/Log",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6364f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/SystemSummary",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6366f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/QMgrSummary",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6368f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUT",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/GET",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SYNCPOINT",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SUBSCRIBE",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6370f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUBLISH",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6372f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/CONNDISC",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6374f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/OPENCLOSE",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6376f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/INQSET",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6378f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/INQSET",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/PUT",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GET",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GENERAL",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6380f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/OPENCLOSE",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6382f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/SystemSummary",type="API"} 1
+ibmmq_subscription_messsages_received{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6384f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/QMgrSummary",type="API"} 1
+# HELP ibmmq_subscription_time_since_message_published Time Since Message Received
+# TYPE ibmmq_subscription_time_since_message_published gauge
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020e710bc6303010040",subscription="SYSTEM.DEFAULT.SUB",topic="",type="ADMIN"} 0
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6306150040",subscription="TEST SYSTEM.BROKER.INTER.BROKER.COMMUNICATIONS 414D51590101000000000000000000000000000000000000 SYSTEM.BROKER.ADMIN.STREAM MQ/TEST                                            /StreamSupport",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="API"} 14170
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6362f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/Log",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6364f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/SystemSummary",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6366f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/QMgrSummary",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6368f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUT",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/GET",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SYNCPOINT",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SUBSCRIBE",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6370f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUBLISH",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6372f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/CONNDISC",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6374f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/OPENCLOSE",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6376f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/INQSET",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6378f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/INQSET",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/PUT",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GET",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GENERAL",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6380f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/OPENCLOSE",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6382f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/SystemSummary",type="API"} 2
+ibmmq_subscription_time_since_message_published{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6384f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/QMgrSummary",type="API"} 2
+# HELP ibmmq_subscription_type Subscription Type
+# TYPE ibmmq_subscription_type gauge
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020e710bc6303010040",subscription="SYSTEM.DEFAULT.SUB",topic="",type="ADMIN"} 2
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6306150040",subscription="TEST SYSTEM.BROKER.INTER.BROKER.COMMUNICATIONS 414D51590101000000000000000000000000000000000000 SYSTEM.BROKER.ADMIN.STREAM MQ/TEST                                            /StreamSupport",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6362f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/Log",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6364f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/SystemSummary",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6366f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/DISK/QMgrSummary",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6368f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUT",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/GET",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SYNCPOINT",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc636ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/SUBSCRIBE",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6370f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/PUBLISH",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6372f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/CONNDISC",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6374f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/OPENCLOSE",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6376f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATMQI/INQSET",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6378f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/INQSET",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637af60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/PUT",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637cf60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GET",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc637ef60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/GENERAL",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6380f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/STATQ/QL.TEST/OPENCLOSE",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6382f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/SystemSummary",type="API"} 1
+ibmmq_subscription_type{platform="UNIX",qmgr="TEST",subid="414d5120544553542020202020202020fb10bc6384f60140",subscription="",topic="$SYS/MQ/INFO/QMGR/TEST/Monitor/CPU/QMgrSummary",type="API"} 1
+# HELP ibmmq_topic_messages_received Received Messages
+# TYPE ibmmq_topic_messages_received gauge
+ibmmq_topic_messages_received{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="sub"} 0
+# HELP ibmmq_topic_publisher_count Number of publishers
+# TYPE ibmmq_topic_publisher_count gauge
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="$SYS",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="$SYS/MQ",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="status"} 0
+ibmmq_topic_publisher_count{platform="UNIX",qmgr="TEST",topic="_",type="status"} 0
+# HELP ibmmq_topic_subscriber_count Number of subscribers
+# TYPE ibmmq_topic_subscriber_count gauge
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="$SYS",type="status"} 0
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="$SYS/MQ",type="status"} 0
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM",type="status"} 0
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ",type="status"} 0
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST",type="status"} 0
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="status"} 1
+ibmmq_topic_subscriber_count{platform="UNIX",qmgr="TEST",topic="_",type="status"} 0
+# HELP ibmmq_topic_time_since_msg_received Time Since Msg
+# TYPE ibmmq_topic_time_since_msg_received gauge
+ibmmq_topic_time_since_msg_received{platform="UNIX",qmgr="TEST",topic="SYSTEM.BROKER.ADMIN.STREAM/MQ/TEST                                            /StreamSupport",type="sub"} 14170
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.61
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 10240
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 13
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 3.5561472e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.67328320801e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.228484608e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 31
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
